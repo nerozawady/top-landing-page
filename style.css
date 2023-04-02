@@ -9,9 +9,11 @@ GENERAL STYLES
     font-family: sans-serif;
 
     --color-1: #1F2937;
+    --color-2: #3882F6;
 }
 
-.header {
+.header,
+.hero {
     padding-inline: 300px;
 }
 
@@ -45,4 +47,47 @@ a:visited,
 a:hover {
     color: white;
     text-decoration: none;
+}
+
+
+/**********************************************************************************************************************
+HERO SECTION
+**********************************************************************************************************************/
+
+.hero {
+    background-color: var(--color-1);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-block: 100px;
+}
+
+.hero>* {
+    flex: 1 1 0;
+}
+
+.hero__content>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero__button {
+    color: white;
+    background-color: var(--color-2);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.hero__image {
+    background-color: rgb(77, 77, 77);
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
 }
