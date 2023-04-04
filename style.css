@@ -16,7 +16,8 @@ GENERAL STYLES
 .header,
 .hero,
 .info,
-.quote {
+.quote,
+.cta {
     padding-inline: 300px;
 }
 
@@ -154,5 +155,43 @@ QUOTE SECTION
 .quote__quotee {
     text-align: end;
     font-size: 20px;
+    font-weight: bold;
+}
+
+/**********************************************************************************************************************
+CALL TO ACTION (CTA) SECTION
+**********************************************************************************************************************/
+.cta {
+    padding-block: 100px;
+    color: white;
+}
+
+.cta__content {
+    padding: 50px 150px;
+    background-color: var(--color-2);
+    display: flex;
+    border-radius: 10px;
+}
+
+.cta__text-container {
+    flex-grow: 1;
+}
+
+.cta__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta__text {
+    color: rgb(230, 230, 230);
+}
+
+.cta__button {
+    padding: 10px 30px;
+    background-color: var(--color-2);
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
     font-weight: bold;
 }
