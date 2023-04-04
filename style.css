@@ -13,7 +13,8 @@ GENERAL STYLES
 }
 
 .header,
-.hero {
+.hero,
+.info {
     padding-inline: 300px;
 }
 
@@ -90,4 +91,45 @@ HERO SECTION
     height: 300px;
     align-items: center;
     justify-content: center;
+}
+
+/**********************************************************************************************************************
+INFO SECTION
+**********************************************************************************************************************/
+
+.info {
+    padding-block: 100px;
+}
+
+.info__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.info__items {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 180px;
+    color: rgb(83, 83, 83);
+}
+
+.info__item {
+    max-width: 170px;
+}
+
+.info__box {
+    width: 170px;
+    height: 170px;
+    margin-inline: auto;
+    border: 3px solid var(--color-2);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.info__text {
+    margin-top: 10px;
+    text-align: center;
 }
